@@ -1,0 +1,20 @@
+{
+  "name": "ultra-fab-app",
+  "description": "Our fourth project",
+  "main": "index.js",
+  "authors": [
+    "Sharon Wong <shyan.wong@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
