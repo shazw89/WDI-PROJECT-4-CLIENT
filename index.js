@@ -1,12 +1,12 @@
 const express    = require('express');
-const expressJWT = require('express-jwt');
+const angularJWT = require('angular-jwt');
 const port       = process.env.PORT || 3000;
 const app        = express();
 const dest       = `${__dirname}/public`;
 
 app.use(express.static(dest));
 
-app.use('/api', expressJWT({ secret: secret })
+app.use('/api', angularJWT({ secret: secret })
   .unless({
     path: [
       { url: '/api/login', methods: ['POST'] },
