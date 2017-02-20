@@ -1,0 +1,3 @@
+angular
+.module('Synesthesia')
+.constant('API', 'http://localhost:3000');
