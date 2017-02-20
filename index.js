@@ -1,8 +1,12 @@
-const express = require('express');
-const port    = process.env.PORT || 3000;
-const app     = express();
-const dest    = `${__dirname}/public`;
+const express    = require('express');
+const morgan     = require('morgan');
+const cors       = require('cors');
+const port       = process.env.PORT || 4000;
+const app        = express();
+const dest       = `${__dirname}/public`;
 
+if (app.get('env') !== 'production') app.use(cors());
+app.use(morgan('dev'));
 app.use(express.static(dest));
 
 app.get('/*', (req, res) => res.sendFile(`${dest}/index.html`));
