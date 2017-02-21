@@ -5,4 +5,5 @@ angular
     'ui.router',
     'angular-jwt',
     'ngResource',
+    'colorpicker.module'
   ]);

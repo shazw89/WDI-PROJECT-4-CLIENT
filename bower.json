@@ -20,6 +20,8 @@
     "angular-ui-router": "^0.3.2",
     "angular-resource": "^1.5.9",
     "skeleton": "^2.0.4",
-    "angular-audio": "^1.7.3"
+    "angular-audio": "^1.7.3",
+    "jquery": "^3.1.1",
+    "angular-bootstrap-colorpicker": "^3.0.25"
   }
 }
