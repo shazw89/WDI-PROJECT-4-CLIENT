@@ -5,5 +5,5 @@ angular
 SoundsIndexCtrl.$inject = ['Sound'];
 function SoundsIndexCtrl(Sound) {
   const vm  = this;
-  // vm.sounds = Sound.query();
+  vm.sounds = Sound.query();
 }

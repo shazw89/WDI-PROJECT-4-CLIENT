@@ -27,13 +27,13 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider) {
     url: '/sounds',
     templateUrl:'/js/views/sounds/index.html',
     controller: 'SoundsIndexCtrl',
-    controllerAs: 'sounds'
+    controllerAs: 'soundsIndex'
   })
   .state('soundsShow', {
-    url: '/sounds/play',
+    url: '/sounds/:id',
     templateUrl: 'js/views/sounds/show.html',
     controller: 'SoundsShowCtrl',
-    controllerAs: 'soundsPlay'
+    controllerAs: 'soundsShow'
   });
 
   $urlRouterProvider.otherwise('/');
