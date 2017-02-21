@@ -10,8 +10,9 @@ function SoundsShowCtrl(Sound, $stateParams){
   // get the selected sound
 
   vm.sound = Sound.get({ id: $stateParams.id });
-
   vm.playSound = playSound;
+
+  // vm.colour = Colour.get({ id: $stateParams.id });
 
   function playSound() {
     new Audio(vm.sound.audio).play();
@@ -19,4 +20,7 @@ function SoundsShowCtrl(Sound, $stateParams){
 
 
   //get the selected colour from the user
+  // function selectColour() {
+  //   new Colour();
+  // }
 }
