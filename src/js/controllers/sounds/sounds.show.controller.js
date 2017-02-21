@@ -18,11 +18,11 @@ function SoundsShowCtrl(Sound, $stateParams){
     new Audio(vm.sound.audio).play()
   }
 
-  vm.pauseSound = pauseSound;
-  
-function pauseSound() {
-  new Audio(vm.sound.audio).pause()
-}
+//   vm.pauseSound = pauseSound;
+//
+// function pauseSound() {
+//   new Audio(vm.sound.audio).pause()
+// }
 
 
 
