@@ -18,7 +18,9 @@ function CurrentUserService(TokenService, $rootScope, User, $window, $state) {
       });
     }
   };
+
   self.getUser();
+
   self.removeUser = () => {
     self.currentUser = null;
     TokenService.removeToken();

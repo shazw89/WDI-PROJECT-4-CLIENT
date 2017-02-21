@@ -12,7 +12,7 @@ function LoginCtrl(User, CurrentUserService, $state) {
     .then(() => {
       // Data not passed through
       CurrentUserService.getUser();
-      $state.go('usersIndex');
+      $state.go('soundsIndex');
     }, () => {
       // Error not passed through
       vm.message= 'Invalid password or user email. Try again';
