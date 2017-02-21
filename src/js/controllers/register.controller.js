@@ -13,7 +13,7 @@ function RegisterCtrl(User, CurrentUserService, $state){
     .then(() => {
       // data not passed through
       CurrentUserService.getUser();
-      $state.go('usersIndex');
+      $state.go('soundsIndex');
     }, err => {
       console.log(err);
     });
