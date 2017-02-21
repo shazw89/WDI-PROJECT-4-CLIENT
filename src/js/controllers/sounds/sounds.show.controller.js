@@ -9,7 +9,13 @@ function SoundsShowCtrl(Sound, $stateParams){
 
 // get the selected sound
 
-  vm.sound = Sound.get({ id: $stateParams.id })
+  vm.sound = Sound.get({ id: $stateParams.id });
+
+  vm.playSound = playSound;
+
+  function playSound() {
+    new Audio(vm.sound.audio).play()
+  }
 
 //play the selected sound to the user
 
