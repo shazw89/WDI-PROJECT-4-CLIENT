@@ -18,9 +18,18 @@ function SoundsShowCtrl(Sound, $stateParams){
     new Audio(vm.sound.audio).play();
   }
 
+  // Click button to pick colour.
+
+  // Modal pops up, containing colour picker.
+
+  // User picks colour.
+
+
+  // User clicks submit, colour is pushed to sound’s show page.
 
   //get the selected colour from the user
   // function selectColour() {
   //   new Colour();
   // }
+
 }
