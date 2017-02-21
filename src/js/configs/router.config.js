@@ -23,6 +23,18 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider) {
     controller: 'LoginCtrl',
     controllerAs: 'login'
   })
+  .state('soundsIndex', {
+    url: '/sounds',
+    templateUrl:'/js/views/sounds/index.html',
+    controller: 'SoundsIndexCtrl',
+    controllerAs: 'sounds'
+  })
+  .state('soundsShow', {
+    url: '/sounds/play',
+    templateUrl: 'js/views/sounds/show.html',
+    controller: 'SoundsShowCtrl',
+    controllerAs: 'soundsPlay'
+  })
   .state('usersIndex', {
     url: '/users',
     templateUrl: '/js/views/users/index.html',
