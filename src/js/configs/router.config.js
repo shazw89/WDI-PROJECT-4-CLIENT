@@ -25,7 +25,7 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider) {
   })
   .state('soundsIndex', {
     url: '/sounds',
-    templateUrl:'/js/views/sounds/index.html',
+    templateUrl: '/js/views/sounds/index.html',
     controller: 'SoundsIndexCtrl',
     controllerAs: 'soundsIndex'
   })

@@ -4,5 +4,5 @@ angular
   .module('Synesthesia', [
     'ui.router',
     'angular-jwt',
-    'ngResource',
+    'ngResource'
   ]);
