@@ -13,9 +13,19 @@ function SoundsShowCtrl(Sound, $stateParams){
 
   vm.playSound = playSound;
 
+
   function playSound() {
     new Audio(vm.sound.audio).play()
   }
+
+  vm.pauseSound = pauseSound;
+  
+function pauseSound() {
+  new Audio(vm.sound.audio).pause()
+}
+
+
+
 
 //play the selected sound to the user
 

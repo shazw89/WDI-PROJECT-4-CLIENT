@@ -1,1 +1,22 @@
 // Import all of your scss files here
+nav {
+ min-height: 75px;
+ display: block;
+ width: 100vw;
+ background-color: #fefefe ;
+ // font-family: 'Anton', sans-serif;
+ margin-bottom: 50px;
+ text-align: center;
+ .logo {
+   text-align: center;
+   display: inline-block;
+   margin: 0 auto;
+   padding: .5em 0;
+   text-decoration: none;
+   color: black;
+   font-size: 2em;
+   font-weight: bold;
+   text-transform: uppercase;
+  //  font-family: 'Anton', sans-serif;
+ }
+}
