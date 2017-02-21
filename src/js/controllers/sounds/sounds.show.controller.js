@@ -7,22 +7,18 @@ function SoundsShowCtrl(Sound, $stateParams){
   const vm = this;
 
 
-// get the selected sound
+  // get the selected sound
 
   vm.sound = Sound.get({ id: $stateParams.id });
 
   vm.playSound = playSound;
 
   function playSound() {
-    new Audio(vm.sound.audio).play()
+    new Audio(vm.sound.audio).play();
   }
 
-//play the selected sound to the user
 
-//get the selected colour from the user
-
-//play the sound and show the user the colour they selected
-
+<<<<<<< HEAD
 function ModalShowCtrl(ModalService){
   const vm = this;
 
@@ -54,4 +50,7 @@ function ModalShowCtrl(ModalService){
 
 }
 
+=======
+  //get the selected colour from the user
+>>>>>>> 1821c3eef8dcc8ce07488e164f202e85c91b51a7
 }

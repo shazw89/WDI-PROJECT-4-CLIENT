@@ -35,6 +35,5 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider) {
     controller: 'SoundsShowCtrl',
     controllerAs: 'soundsShow'
   });
-
   $urlRouterProvider.otherwise('/');
 }

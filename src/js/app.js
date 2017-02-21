@@ -4,5 +4,10 @@ angular
   .module('Synesthesia', [
     'ui.router',
     'angular-jwt',
+<<<<<<< HEAD
     'ngResource'
+=======
+    'ngResource',
+    'colorpicker.module'
+>>>>>>> 1821c3eef8dcc8ce07488e164f202e85c91b51a7
   ]);
