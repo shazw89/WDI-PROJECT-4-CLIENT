@@ -1,4 +1,3 @@
-
 body{
   background-color: #eee;
 }
@@ -42,4 +41,19 @@ body{
   transform: rotate(-45deg);
   position: absolute;
   top:19px;
+}
+
+.colourBox{
+  width: 70px;
+  height: 70px;
+  margin: 4px;
+  border-radius: 2px;
+  list-style: none;
+  float: right;
+  display: inline;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
 }

@@ -23,5 +23,6 @@ function MainCtrl($rootScope, CurrentUserService, $state) {
     document.getElementById('burger-container').addEventListener('click', function () {
       this.classList.toggle('open');
     });
+
   };﻿
 }
