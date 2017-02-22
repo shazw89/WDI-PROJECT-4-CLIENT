@@ -2,25 +2,26 @@ angular
 .module('Synesthesia')
 .controller('SoundsShowCtrl', SoundsShowCtrl);
 
-SoundsShowCtrl.$inject = ['Sound', '$stateParams'];
-function SoundsShowCtrl(Sound, $stateParams){
-  const vm = this;
+SoundsShowCtrl.$inject = ['Sound', 'Colour', '$stateParams', 'CurrentUserService'];
+function SoundsShowCtrl(Sound, Colour, $stateParams, CurrentUserService){
+  const vm     = this;
+  vm.sound     = Sound.get({ id: $stateParams.id });
 
-
-  // get the selected sound
-
-  vm.sound = Sound.get({ id: $stateParams.id });
-  vm.playSound = playSound;
-
-  // vm.colour = Colour.get({ id: $stateParams.id });
-
-  function playSound() {
+  vm.playSound = function() {
     new Audio(vm.sound.audio).play();
-  }
+  };
 
+  vm.addColour = function() {
+    vm.colour.sound_id = vm.sound.id;
+    vm.colour.user_id = CurrentUserService.currentUser.id;
 
-  //get the selected colour from the user
-  // function selectColour() {
-  //   new Colour();
-  // }
+    Colour
+      .save(vm.colour)
+      .$promise
+      .then(data => {
+        vm.colour = {};
+        console.log("COLOR SAVED", data);
+      });
+  };
+
 }

@@ -2,8 +2,10 @@
 <h5>{{ soundsShow.sound.genre }}</h5>
 
 <button ng-click="soundsShow.playSound()">Play Sound</button>
-<button ng-click="">Pick a Colour</button>
 
-<input colorpicker colorpicker-close-on-select type="text" ng-model="your_model" />
+<form ng-submit="soundsShow.addColour()">
+  <input colorpicker colorpicker-close-on-select type="text" ng-model="soundsShow.colour.name">
+  <input type="submit" value="Save Color">
+</form>
 
-<button ng-click="" name="button">Submit</button>
+<button ui-sref="soundsResults({ id: soundsShow.sound.id })">Show Results</button>
