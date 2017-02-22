@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Synesthesia</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.js" charset="utf-8"></script>
   <base href="/">
   <!-- inject:js -->
   <!-- endinject -->
@@ -28,16 +27,11 @@
           <li class="menu-link" ng-show="main.user">
             <a ui-sref="soundsIndex">View Sounds</a>
           </li>
-          <li class="menu-link" ng-show="main.user">
-            <a ui-sref="soundsNew">Create Sounds</a>
-          </li>
         </ul>
       </div>
       <p><a class="logo" href="/">Synesthesia</a></p>
     </nav>
   </header>
-
-<button colorpicker type="button" colorpicker-position="top" ng-model="nonInput.color">Change Color</button>
 
   <main class="container" ui-view></main>
 </body>

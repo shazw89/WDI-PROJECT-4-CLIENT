@@ -25,7 +25,7 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider) {
   })
   .state('soundsIndex', {
     url: '/sounds',
-    templateUrl:'/js/views/sounds/index.html',
+    templateUrl: '/js/views/sounds/index.html',
     controller: 'SoundsIndexCtrl',
     controllerAs: 'soundsIndex'
   })
@@ -34,6 +34,12 @@ function Router($stateProvider, $locationProvider, $urlRouterProvider) {
     templateUrl: 'js/views/sounds/show.html',
     controller: 'SoundsShowCtrl',
     controllerAs: 'soundsShow'
+  })
+  .state('soundsResults', {
+    url: '/sounds/:id/results',
+    templateUrl: 'js/views/sounds/results.html',
+    controller: 'SoundsResultsCtrl',
+    controllerAs: 'soundsResults'
   });
   $urlRouterProvider.otherwise('/');
 }
