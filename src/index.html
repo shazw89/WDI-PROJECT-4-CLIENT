@@ -11,28 +11,53 @@
 </head>
 <body ng-controller="MainCtrl as main">
   <header>
-    <nav>
-      <div class="menu-collapsed">
-        <div class="bar"></div>
-        <ul>
-          <li class="menu-link" ng-hide="main.user">
-            <a ui-sref="register">Register</a>
-          </li>
-          <li class="menu-link" ng-hide="main.user">
-            <a ui-sref="login">Sign in</a>
-          </li>
-          <li class="menu-link" ng-show="main.user">
-            <a ng-click="main.logout()">Sign out</a>
-          </li>
-          <li class="menu-link" ng-show="main.user">
-            <a ui-sref="soundsIndex">View Sounds</a>
-          </li>
-        </ul>
-      </div>
-      <p><a class="logo" href="/">Synesthesia</a></p>
-    </nav>
-  </header>
 
-  <main class="container" ui-view></main>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header"></div>
+      </div>
+      <div id="burger-container">
+        <div id="burger" ui-sref="/" ng-click="collapsed=!collapsed">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+<ul class="burger-menu" ng-hide="collapsed">
+  <li ng-click="main.hideMenu()"><a ui-sref="/">Home</a></li>
+  <li ng-hide="main.user"><a ui-sref="login">Sign in</a></li>
+  <li ng-hide="main.user"><a ui-sref="register">Register</a></li>
+  <li ng-hide="main.user"><a ui-sref="soundsIndex">View</a></li>
+  <li ng-show="main.logout()"><a>Sign out</a></li>
+</ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+      <h2>Bootstrap 3 Navbar Example</h2>
+      <ul>
+        <li>Use <code>.navbar-static-top</code> to eliminate the border radius</li>
+        <li>Use <code>.navbar-right</code> to right-align link and dropdown</li>
+        <li>Use <code>.pull-right</code> in the right-aligned <code>.dropdown-menu</code> so that the menu isn't cutoff</li>
+      </ul>
+    </div>
+
+    <main class="container" ui-view></main>
+  </body>
+  </html>
+
+
+  <main ui-view></main>
+
+  <!-- <input ng-show="main.user" type="filepicker" data-fp-apikey="Au0FfUuSTvihNwvzZV0Q3z"
+  onchange="alert(event.fpfile.url)"> -->
+
+  <footer class="footer">
+    <p class="footer-text">FOOTER<br>
+      Made with &hearts; at GA
+    </p>
+  </footer>
 </body>
 </html>
