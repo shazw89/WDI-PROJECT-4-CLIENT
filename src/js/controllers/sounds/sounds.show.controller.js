@@ -11,46 +11,18 @@ function SoundsShowCtrl(Sound, Colour, $stateParams, CurrentUserService){
     new Audio(vm.sound.audio).play();
   };
 
-// <<<<<<< HEAD
-// get the selected sound
-
-  vm.sound = Sound.get({ id: $stateParams.id });
-
-  vm.playSound = playSound;
+  vm.addColour = function() {
+    vm.colour.sound_id = vm.sound.id;
+    vm.colour.user_id = CurrentUserService.currentUser.id;
 
 
-  function playSound() {
-    new Audio(vm.sound.audio).play()
-  }
-
-//   vm.pauseSound = pauseSound;
-//
-// function pauseSound() {
-//   new Audio(vm.sound.audio).pause()
-// }
-
-
-
-
-//play the selected sound to the user
-
-//get the selected colour from the user
-
-//play the sound and show the user the colour they selected
-// =======
-//   vm.addColour = function() {
-//     vm.colour.sound_id = vm.sound.id;
-//     vm.colour.user_id = CurrentUserService.currentUser.id;
-//
-//
-//     Colour
-//       .save(vm.colour)
-//       .$promise
-//       .then(data => {
-//         vm.colour = {};
-//         console.log("COLOR SAVED", data);
-//       });
-//   };
-// >>>>>>> b9ca9024bfc85a852bcb689d6342974eaddb210f
+    Colour
+      .save(vm.colour)
+      .$promise
+      .then(data => {
+        vm.colour = {};
+        console.log("COLOR SAVED", data);
+      });
+  };
 
 }
