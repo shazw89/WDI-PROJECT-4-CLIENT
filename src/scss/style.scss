@@ -1,20 +1,14 @@
-// nav {
-//  min-height: 75px;
-//  display: block;
-//  width: 100vw;
-//  background-color: #fefefe ;
-//  // font-family: 'Anton', sans-serif;
-//  margin-bottom: 50px;
-//  text-align: center;
-//  .logo {
-//    text-align: center;
-//    display: inline-block;
-//    margin: 0 auto;
-//    padding: .5em 0;
-//    text-decoration: none;
-//    color: black;
-//    font-size: 2em;
-//    font-weight: bold;
-//    text-transform: uppercase;
-//   //  font-family: 'Anton', sans-serif;
-//  }
+.colourBox{
+  width: 70px;
+  height: 70px;
+  margin: 4px;
+  border-radius: 2px;
+  list-style: none;
+  float: right;
+  display: inline;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+}
