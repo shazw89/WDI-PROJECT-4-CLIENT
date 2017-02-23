@@ -18,11 +18,4 @@ function MainCtrl($rootScope, CurrentUserService, $state) {
     vm.user = null;
     $state.go('login');
   });
-
-  window.onload = function () {
-    document.getElementById('burger-container').addEventListener('click', function () {
-      this.classList.toggle('open');
-    });
-
-  };﻿
 }
