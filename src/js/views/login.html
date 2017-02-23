@@ -3,19 +3,19 @@
   <h4 ng-if="login.message">{{ login.message }}</h4>
   <form ng-submit="login.login()">
     <div class="row">
-      <div class="twelve columns">
-        <label for="EmailInput">Your email</label>
-        <input class="u-full-width" id="EmailInput" type="email" name="email" ng-model="login.user.email" placeholder="Email">
-      </div>
-      <div class="row">
-        <div class="twelve columns">
-          <div class="u-full-width">
-            <label for="PasswordInput">Your password</label>
-            <input id="PasswordInput" class="u-full-width" type="password" name="password" ng-model="login.user.password" placeholder="Password">
-          </div>
-        </div>
-      </div>
-    </div>
+           <div class="col-sm-8">
+
+               <h4 class="page-header">Bottom Labels</h4>
+               <form role="form">
+                   <div class="form-group float-label-control label-bottom">
+                       <label for="">Username</label>
+                       <input type="email" class="form-control" placeholder="Username">
+                   </div>
+               </form>
+
+           </div>
+
+       </div>
     <input type="submit" value="Login">
   </form>
 </div>
