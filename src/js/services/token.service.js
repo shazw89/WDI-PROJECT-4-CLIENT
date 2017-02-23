@@ -7,6 +7,7 @@ function TokenService($window, jwtHelper) {
   const self = this;
 
   self.setToken = (token) => {
+    console.log(token);
     return $window.localStorage.setItem('auth-token', token);
   };
   self.getToken = () => {
