@@ -9,7 +9,8 @@ function LoginCtrl(User, CurrentUserService, $state) {
   vm.login = () => {
     User.login(vm.user)
     .$promise
-    .then(() => {
+    .then((data) => {
+      console.log(data);
       // Data not passed through
       CurrentUserService.getUser();
       $state.go('soundsIndex');

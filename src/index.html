@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html ng-app="Synesthesia">
 <head>
-  <meta charset="utf-8">
-  <title>Synesthesia</title>
-  <base href="/">
-  <!-- inject:js -->
-  <!-- endinject -->
-  <!-- inject:css -->
-  <!-- endinject -->
+ <meta charset="utf-8">
+ <title>Synesthesia</title>
+ <base href="/">
+ <!-- inject:js -->
+ <!-- endinject -->
+ <!-- inject:css -->
+ <!-- endinject -->
 </head>
 <body ng-controller="MainCtrl as main">
-  <header>
-    <nav>
-      <div class="menu-collapsed">
-        <div class="bar"></div>
-        <ul>
-          <li class="menu-link" ng-hide="main.user">
-            <a ui-sref="register">Register</a>
-          </li>
-          <li class="menu-link" ng-hide="main.user">
-            <a ui-sref="login">Sign in</a>
-          </li>
-          <li class="menu-link" ng-show="main.user">
-            <a ng-click="main.logout()">Sign out</a>
-          </li>
-          <li class="menu-link" ng-show="main.user">
-            <a ui-sref="soundsIndex">View Sounds</a>
-          </li>
-        </ul>
-      </div>
-      <p><a class="logo" href="/">Synesthesia</a></p>
-    </nav>
-  </header>
+ <header>
+   <nav class="navbar navbar-default">
+     <div class="container">
+       <div class="navbar-header">
+         <ul class="menu">
+           <li ng-click="main.hideMenu()"><a ui-sref="home">Home</a></li>
+           <li ng-hide="main.user"><a ui-sref="login">Sign in</a></li>
+           <li ng-hide="main.user"><a ui-sref="register">Register</a></li>
+           <li ng-show="main.user"><a ui-sref="soundsIndex">View</a></li>
+           <li ng-show="main.user" ng-click="main.logout()"><a>Sign out</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+ </header>
+ <main ui-view></main>
 
-  <main class="container" ui-view></main>
+ <!-- <input ng-show="main.user" type="filepicker" data-fp-apikey="Au0FfUuSTvihNwvzZV0Q3z"
+ onchange="alert(event.fpfile.url)"> -->
+
+ <footer class="footer">
+   <p class="footer-text">FOOTER<br>
+     Made with &hearts; at GA
+   </p>
+ </footer>
 </body>
 </html>

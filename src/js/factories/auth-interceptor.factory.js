@@ -7,8 +7,7 @@ function AuthInterceptor(API, TokenService) {
   return {
     request(config) {
       const token = TokenService.getToken();
-
-      if (config.url.indexOf(API) ===0 && token) {
+      if (config.url.indexOf(API) === 0 && token) {
         config.headers.Authorization = `Bearer ${token}`;
       }
       return config;
