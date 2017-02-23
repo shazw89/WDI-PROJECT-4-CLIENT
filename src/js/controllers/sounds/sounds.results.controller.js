@@ -25,6 +25,8 @@ function SoundsResultsCtrl(Sound, $stateParams, $document) {
         }
       }
 
+      console.log(vm.colours);
+
       setInterval(function(){
         change();
       }, 2500);

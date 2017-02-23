@@ -13,15 +13,9 @@ function MainCtrl($rootScope, CurrentUserService, $state) {
  vm.logout = () => {
    CurrentUserService.removeUser();
  };
-
-<<<<<<< HEAD
+ 
  $rootScope.$on('loggedOut', () => {
    vm.user = null;
  });
-=======
-  $rootScope.$on('loggedOut', () => {
-    vm.user = null;
-  });
 
->>>>>>> Ali
 }
