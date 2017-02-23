@@ -15,19 +15,20 @@
      <div class="container">
        <div class="navbar-header">
          <ul class="menu">
-           <li ng-click="main.hideMenu()"><a ui-sref="/">Home</a></li>
+           <li ng-click="main.hideMenu()"><a ui-sref="home">Home</a></li>
            <li ng-hide="main.user"><a ui-sref="login">Sign in</a></li>
            <li ng-hide="main.user"><a ui-sref="register">Register</a></li>
-           <li ng-hide="main.user"><a ui-sref="soundsIndex">View</a></li>
-           <li ng-show="main.logout()"><a>Sign out</a></li>
+           <li ng-show="main.user"><a ui-sref="soundsIndex">View</a></li>
+           <li ng-show="main.user" ng-click="main.logout()"><a>Sign out</a></li>
          </ul>
        </div>
      </div>
    </nav>
  </header>
-
  <main ui-view></main>
 
+ <!-- <input ng-show="main.user" type="filepicker" data-fp-apikey="Au0FfUuSTvihNwvzZV0Q3z"
+ onchange="alert(event.fpfile.url)"> -->
 
  <footer class="footer">
    <p class="footer-text">FOOTER<br>
