@@ -4,18 +4,17 @@ angular
 
 MainCtrl.$inject = ['$rootScope', 'CurrentUserService', '$state'];
 function MainCtrl($rootScope, CurrentUserService, $state) {
-  const vm = this;
+ const vm = this;
 
-  $rootScope.$on('loggedIn', () => {
-    vm.user = CurrentUserService.currentUser;
-  });
+ $rootScope.$on('loggedIn', () => {
+   vm.user = CurrentUserService.currentUser;
+ });
 
-  vm.logout = () => {
-    CurrentUserService.removeUser();
-  };
+ vm.logout = () => {
+   CurrentUserService.removeUser();
+ };
 
-  $rootScope.$on('loggedOut', () => {
-    vm.user = null;
-    $state.go('login');
-  });
+ $rootScope.$on('loggedOut', () => {
+   vm.user = null;
+ });
 }
