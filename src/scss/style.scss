@@ -1,14 +1,53 @@
-.colourBox{
-  width: 70px;
-  height: 70px;
-  margin: 4px;
-  border-radius: 2px;
-  list-style: none;
-  float: right;
-  display: inline;
+.jumbotron {
+  background-image: url("http://cdn1.alphr.com/sites/alphr/files/styles/16x9_540/public/2015/06/rainbow.jpg?itok=nSnONP_3");
 }
 
-.box {
-  width: 100px;
-  height: 100px;
+.display-3 {
+  text-align: center;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+  margin-left: 238px;
+}
+
+.lead {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.menu-link1 {
+  float: left;
+  margin-right: 37px;
+}
+
+.boxA {
+  margin: -2px;
+  list-style-type: none;
+
+  .box {
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 15s; /* Safari 4.0 - 8.0 */
+    // border: solid black;
+  }
+}
+
+.colour-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 0 auto;
+
+  transition: all 2.5s;
+}
+
+@keyframes example {
+  from { width: 100px; },
+  to { width: 1000px; }
 }
