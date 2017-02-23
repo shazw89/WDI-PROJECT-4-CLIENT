@@ -1,15 +1,10 @@
-// .boxA {
-//
-//   margin: 4px;
-//   list-style: none;
-//   display: inline-block;
-//   -webkit-transition: width 2s;
-//   transition: width 2s;
-//
-//   .box {
-//     width: 100px;
-//     height: 100px;
-//     border-radius: 5px;
-//     border: solid black;
-//   }
-// }
+//This is the page for the sounds results, with the animations.
+
+.colour-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  margin: 0 auto;
+
+  transition: all 2.5s;
+}

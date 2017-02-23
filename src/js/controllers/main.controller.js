@@ -18,4 +18,5 @@ function MainCtrl($rootScope, CurrentUserService, $state) {
     vm.user = null;
     $state.go('login');
   });
+﻿
 }
