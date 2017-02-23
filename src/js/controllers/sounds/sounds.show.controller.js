@@ -24,11 +24,11 @@ function SoundsShowCtrl(Sound, Colour, $stateParams, CurrentUserService){
     Colour
     //save the colour which has been selected and then send all...
     //...of this data and pass it through as a string
-      .save(vm.colour)
-      .$promise
-      .then(data => {
-        vm.colour.name = "";
-      });
+    .save(vm.colour)
+    .$promise
+    .then(() => {
+      vm.colour.name = '';
+    });
   };
 
 }
