@@ -1,9 +1,9 @@
+<div class="form-container">
 <h1>Login</h1>
 <h4 ng-if="login.message">{{ login.message }}</h4>
 <form ng-submit="login.login()">
- <div class="row">
+     <div class="row">
    <div class="col-sm-8">
-     <h4 class="page-header">Bottom Labels</h4>
      <div class="form-group float-label-control label-bottom">
        <label for="EmailInput">Email</label>
        <input type="email" class="form-control" placeholder="email" ng-model="login.user.email">
@@ -14,5 +14,7 @@
      </div>
    </div>
  </div>
+</div>
+
  <input type="submit" value="Login">
 </form>```
