@@ -3,6 +3,12 @@
   margin-right: 37px;
 }
 
+ul li{
+margin-top: 10px;
+margin-left: 100px;
+float: left;
+}
+
 .float-label-control { position: relative; margin-bottom: 1.5em; }
     .float-label-control ::-webkit-input-placeholder { color: transparent; }
     .float-label-control :-moz-placeholder { color: transparent; }

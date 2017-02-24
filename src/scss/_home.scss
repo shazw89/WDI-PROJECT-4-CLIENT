@@ -4,6 +4,13 @@
     margin-bottom: 30px;
     background-color:transparent !important;
   }
+  p {
+    text-align: center;
+  }
+
+  .col-sm-8 {
+        margin-left: 215px;
+  }
 
   .shape {
     width: 400px;
@@ -45,6 +52,7 @@
       transform:rotate(45deg);
     }
 
+
     25%  {
       border-radius:20% 45% 50% 45%;
       background:#38E094;
@@ -66,3 +74,11 @@
       transform:rotate(180deg);
     }
   }
+
+p {
+  text-align: center;
+}
+
+.col-sm-8 {
+      margin-left: 215px;
+}
