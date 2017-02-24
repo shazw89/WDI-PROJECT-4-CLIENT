@@ -4,6 +4,19 @@
   <li ng-repeat="sound in soundsIndex.sounds track by $index">
     <p>{{ sound.name }}</p>
     <p>{{ sound.genre }}</p>
-    <button ui-sref="soundsShow({ id: sound.id })">View Sound</button>
+    <button class="btn btn-warning" ui-sref="soundsShow({ id: sound.id })">View Sound</button>
   </li>
 </ul>
+
+
+  <div class="wave-one floating">
+  </div>
+
+  <div class="wave-two floating3">
+  </div>
+
+  <div class="wave-three floating4">
+  </div>
+
+  <div class="wave-threeb floating2">
+  </div>
