@@ -2,7 +2,7 @@
 <html ng-app="Synesthesia">
 <head>
  <meta charset="utf-8">
- <title>Synesthesia</title>
+ <title>Aura</title>
  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
  <base href="/">
  <!-- inject:js -->
@@ -12,9 +12,9 @@
 </head>
 <body ng-controller="MainCtrl as main">
  <header>
+
    <nav class="navbar navbar-default">
-     <div class="container">
-       <div class="navbar-header">
+         <a class="navbar-brand" href="#"><img alt="Brand" src="images/Logo_blk.png"></a>
          <ul class="menu">
            <li ng-click="main.hideMenu()"><a ui-sref="home">Home</a></li>
            <li ng-hide="main.user"><a ui-sref="login">Sign in</a></li>
@@ -22,11 +22,23 @@
            <li ng-show="main.user"><a ui-sref="soundsIndex">View</a></li>
            <li ng-show="main.user" ng-click="main.logout()"><a>Sign out</a></li>
          </ul>
-       </div>
-     </div>
    </nav>
+
  </header>
  <main ui-view></main>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  <!-- <input ng-show="main.user" type="filepicker" data-fp-apikey="Au0FfUuSTvihNwvzZV0Q3z"
  onchange="alert(event.fpfile.url)"> -->
