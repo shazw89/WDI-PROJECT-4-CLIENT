@@ -1,13 +1,65 @@
 <h2>{{ soundsShow.sound.name }}</h2>
 <h5>{{ soundsShow.sound.genre }}</h5>
 
-<button ng-click="soundsShow.playSound()">Play Sound</button>
+<!-- <button ng-click="soundsShow.playSound()">Play Sound</button> -->
 
 <form ng-submit="soundsShow.addColour()">
   <input colorpicker colorpicker-close-on-select type="text" ng-model="soundsShow.colour.name">
   <input type="submit" value="Save Color">
 </form>
 
- <button type="button" class="btn btn-circle btn-flat ripple-effect btn-primary">Default button</button>
+ <!-- <button type="button" class="btn btn-circle btn-flat ripple-effect btn-primary">Default button</button> -->
+<!-- <button ui-sref="soundsResults({ id: soundsShow.sound.id })">Show Results</button> -->
 
-<button ui-sref="soundsResults({ id: soundsShow.sound.id })">Show Results</button>
+
+<form ng-submit="soundsShow.addColour()">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="form-group float-label-control label-bottom">
+        <label for="Colour"></label>
+        <input colorpicker colorpicker-close-on-select type="text" ng-model="soundsShow.colour.name">
+        <input type="submit" value="Save Color">
+      </div>
+    </div>
+      </div>
+
+      <div class="btn-group btn-group-justified" role="group" aria-label="sound_show">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default" ng-click="soundsShow.playSound()">Play Sound</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default" ui-sref="soundsResults({ id: soundsShow.sound.id })">Show Results</button>
+        </div>
+
+      </div>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="btn-group btn-group-justified" role="group" aria-label="sound_show">
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default" ng-click="soundsShow.playSound()">Play Sound</button>
+  </div>
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-default" ui-sref="soundsResults({ id: soundsShow.sound.id })">Show Results</button>
+  </div>
+
+</div> -->

@@ -1,27 +1,37 @@
-.navbar-default {
-    background-color:transparent !important;
-    border-color: transparent !important;
+nav.navbar.navbar-default {
+ul li{
+margin-top: 10px;
+margin-left: 100px;
+float: left;
+display: inline-block;
 }
 .menu-link1 {
   float: left;
   margin-right: 37px;
 }
 
-ul li{
-margin-top: 10px;
-margin-left: 100px;
-float: left;
-}
 
-a {
-    color: #000000;
-    text-decoration: none;
 }
 
 
 
+//
+// .navbar-default {
+//     background-color:transparent !important;
+//     border-color: transparent !important;
+// }
 
-
+//
+// ul li{
+// margin-top: 10px;
+// margin-left: 100px;
+// float: left;
+// }
+//
+// a {
+//     color: #000000;
+//     text-decoration: none;
+// }
 
 .float-label-control { position: relative; margin-bottom: 1.5em; }
     .float-label-control ::-webkit-input-placeholder { color: transparent; }
