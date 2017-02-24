@@ -1,1 +1,218 @@
 //This is the index page of all the sounds
+.wave-one {
+  width: 1024px;
+  height: 819px;
+  background: url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_one.png");
+  background-repeat: repeat-y;
+  float: left;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  overflow: hidden;
+}
+
+.wave-two {
+  width: 1024px;
+  height: 819px;
+ background: url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_two.png") no-repeat;
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.wave-three {
+  width:1024px;
+  height:819px;
+ background:url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_three.png") no-repeat;
+  position:absolute;
+  z-index:2;
+  top: 0px;
+  left:0px;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.wave-threeb {
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  float: left;
+  overflow: hidden;
+  background: url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_three.png") no-repeat;
+}
+
+/*
+==============================================
+floating
+==============================================
+*/
+
+.floating{
+    animation-name: floating;
+    -webkit-animation-name: floating;
+
+    animation-duration: 10s;
+    -webkit-animation-duration: 10s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+         transform: translateX(60%);
+    }
+  	80% {
+    		transform:translateX(20%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes floating {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    50% {
+         transform: translateX(100%);
+    }
+  	80% {
+      	transform: translateX(150%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+/* Second Version*/
+.floating2{
+    animation-name: floating;
+    -webkit-animation-name: floating;
+
+    animation-duration: 12s;
+    -webkit-animation-duration: 12s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating2 {
+    0% {
+        transform: translateX(0%);
+    }
+    20% {
+         transform: translateX(80%);
+    }
+  	80% {
+    		transform:translateX(40%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes floating2 {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    20% {
+         transform: translateX(80%);
+    }
+  	80% {
+      	transform: translateX(40%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+/* Third Version*/
+.floating3{
+    animation-name: floating;
+    -webkit-animation-name: floating;
+
+    animation-duration: 8s;
+    -webkit-animation-duration: 8s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating3 {
+    0% {
+        transform: translateX(0%);
+    }
+    40% {
+         transform: translateX(50%);
+    }
+  	80% {
+    		transform:translateX(100%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes floating3 {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    40% {
+         transform: translateX(50%);
+    }
+  	80% {
+      	transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+/* Fourth Version*/
+.floating4{
+    animation-name: floating;
+    -webkit-animation-name: floating;
+
+    animation-duration: 25s;
+    -webkit-animation-duration: 25s;
+
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating4 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+    		transform:translateX(100%)
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes floating4 {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    50% {
+         transform: translateX(50%);
+    }
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+ul li {
+  padding: 10px
+}
