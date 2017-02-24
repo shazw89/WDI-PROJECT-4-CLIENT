@@ -1,0 +1,182 @@
+//This is the page for the sounds results, with the animations.
+
+.colour-circle {
+  width: 1000%;
+  height: 600px;
+  // border-radius: 100%;
+  margin: 0 auto;
+
+  transition: all 2.5s;
+}
+
+.sun{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #f48148;
+
+  top: 50%;
+  left: 50%;
+
+  -moz-animation: spin 5s infinite linear;
+  -webkit-animation: spin 5s infinite linear;
+}
+
+.sun1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #f48148;
+
+  top: 50%;
+  left: 50%;
+
+  -moz-animation: spinoff 4s infinite linear;
+  -webkit-animation: spinoff 4s infinite linear;
+}
+
+.sun2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #f48148;
+
+  top: 50%;
+  left: 50%;
+
+  -moz-animation: spinoff 13s infinite linear;
+  -webkit-animation: spinoff 13s infinite linear;
+}
+
+.mecury {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 47px auto;
+  background-color: #ABACAB;
+
+  -moz-animation: spin 5s infinite linear;
+  -webkit-animation: spin 5s infinite linear;
+}
+
+.venus {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  margin: 62px auto;
+  background-color: #f00;
+
+}
+
+.earth {
+
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  margin: 112px auto;
+  background-color: #10ade2;
+  position: relative;
+  top: -185px;
+
+  -moz-animation: spinoff 3s infinite linear;
+  -webkit-animation: spinoff 3s infinite linear;
+}
+
+.moon {
+
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  margin: -65px auto;
+  background-color: #DDD;
+
+
+  -moz-animation: spin 10s infinite linear;
+  -webkit-animation: spin 10s infinite linear;
+}
+
+.mars {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 93px auto;
+  background-color: #FFEBCD;
+
+}
+
+.jupiter{
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 110px auto;
+  background-color: orange;
+
+}
+
+.saturn {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin: 150px auto;
+  background-color: #FF0;
+
+
+  -moz-animation: spinoff 3s infinite linear;
+  -webkit-animation: spinoff 3s infinite linear;
+}
+
+.uranus {
+width: 18px;
+height: 18px;
+border-radius: 100%;
+margin: 125px;
+background-color: grey;
+
+
+}
+
+.neptune {
+width: 13px;
+height: 13px;
+border-radius: 100%;
+margin: 145px;
+background-color: blue;
+
+
+}
+
+.pluto {
+width: 3px;
+height: 3px;
+border-radius: 100%;
+margin: 165px;
+background-color: white;
+
+
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spinoff {
+  0% {
+    -webkit-transform: rotate(90deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
