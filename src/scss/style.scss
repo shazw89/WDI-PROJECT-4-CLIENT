@@ -1,5 +1,11 @@
+@import "form";
+@import "button";
 @import "navbar";
 
-@import "home";
+@import "pages/_home";
+@import "pages/_soundsIndex";
+@import "pages/_soundsShow";
+@import "pages/_soundsResults";
+
 
 @import "typography";
