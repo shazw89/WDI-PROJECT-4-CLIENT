@@ -42,3 +42,46 @@ p {
     z-index: 1;
     text-align: center;
   }
+
+  h2{
+font-family: 'noto', sans-serif;
+font-weight: 700;
+font-size: 25px;
+letter-spacing: 15px;
+text-transform: uppercase;
+}
+
+  @keyframes square-to-circle {
+   0%  {
+     border-radius:50% 50% 45% 30%;
+     background: #DD4B67;
+     transform:rotate(0deg);
+   }
+   15%  {
+     border-radius:45% 50% 50% 30%;
+     background:#E0C41E;
+     transform:rotate(45deg);
+   }
+
+
+   25%  {
+     border-radius:20% 45% 50% 45%;
+     background:#38E094;
+     transform:rotate(45deg);
+   }
+   50%  {
+     border-radius:45% 25% 40% 30%;
+     background:#8BD16B;
+     transform:rotate(90deg);
+   }
+   75%  {
+     border-radius:25% 25% 50% 20%;
+     background:#63BCC1;
+     transform:rotate(135deg);
+   }
+   100% {
+     border-radius:50%;
+     background:#402989;
+     transform:rotate(180deg);
+   }
+ }
