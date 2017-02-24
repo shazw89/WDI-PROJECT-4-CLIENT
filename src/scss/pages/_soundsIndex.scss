@@ -1,4 +1,25 @@
 //This is the index page of all the sounds
+//This is the index page of all the sounds
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+ul {
+  color: white;
+ ul .play{
+   padding-top: 50px;
+ }
+}
+.play {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: black;
+}
+button a {
+  color: white;
+}
 .wave-one {
   width: 1024px;
   height: 819px;
@@ -11,7 +32,6 @@
   z-index: 7;
   overflow: hidden;
 }
-
 .wave-two {
   width: 1024px;
   height: 819px;
@@ -23,7 +43,6 @@
   z-index: 5;
   overflow: hidden;
 }
-
 .wave-three {
   width:1024px;
   height:819px;
@@ -35,7 +54,6 @@
   z-index: 5;
   overflow: hidden;
 }
-
 .wave-threeb {
   position:absolute;
   top: 0;
@@ -45,24 +63,19 @@
   overflow: hidden;
   background: url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_three.png") no-repeat;
 }
-
 /*
 ==============================================
 floating
 ==============================================
 */
-
 .floating{
     animation-name: floating;
     -webkit-animation-name: floating;
-
     animation-duration: 10s;
     -webkit-animation-duration: 10s;
-
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
-
 @keyframes floating {
     0% {
         transform: translateX(0%);
@@ -70,14 +83,13 @@ floating
     20% {
          transform: translateX(60%);
     }
-  	80% {
-    		transform:translateX(20%)
+    80% {
+            transform:translateX(20%)
     }
     100% {
         transform: translateX(0%);
     }
 }
-
 @-webkit-keyframes floating {
     0% {
         -webkit-transform: translateX(0%);
@@ -85,26 +97,22 @@ floating
     50% {
          transform: translateX(100%);
     }
-  	80% {
-      	transform: translateX(150%);
+    80% {
+        transform: translateX(150%);
     }
     100% {
         -webkit-transform: translateX(0%);
     }
 }
-
 /* Second Version*/
 .floating2{
     animation-name: floating;
     -webkit-animation-name: floating;
-
     animation-duration: 12s;
     -webkit-animation-duration: 12s;
-
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
-
 @keyframes floating2 {
     0% {
         transform: translateX(0%);
@@ -112,14 +120,13 @@ floating
     20% {
          transform: translateX(80%);
     }
-  	80% {
-    		transform:translateX(40%)
+    80% {
+            transform:translateX(40%)
     }
     100% {
         transform: translateX(0%);
     }
 }
-
 @-webkit-keyframes floating2 {
     0% {
         -webkit-transform: translateX(0%);
@@ -127,26 +134,22 @@ floating
     20% {
          transform: translateX(80%);
     }
-  	80% {
-      	transform: translateX(40%);
+    80% {
+        transform: translateX(40%);
     }
     100% {
         -webkit-transform: translateX(0%);
     }
 }
-
 /* Third Version*/
 .floating3{
     animation-name: floating;
     -webkit-animation-name: floating;
-
     animation-duration: 8s;
     -webkit-animation-duration: 8s;
-
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
-
 @keyframes floating3 {
     0% {
         transform: translateX(0%);
@@ -154,14 +157,13 @@ floating
     40% {
          transform: translateX(50%);
     }
-  	80% {
-    		transform:translateX(100%)
+    80% {
+            transform:translateX(100%)
     }
     100% {
         transform: translateX(0%);
     }
 }
-
 @-webkit-keyframes floating3 {
     0% {
         -webkit-transform: translateX(0%);
@@ -169,38 +171,33 @@ floating
     40% {
          transform: translateX(50%);
     }
-  	80% {
-      	transform: translateX(100%);
+    80% {
+        transform: translateX(100%);
     }
     100% {
         -webkit-transform: translateX(0%);
     }
 }
-
 /* Fourth Version*/
 .floating4{
     animation-name: floating;
     -webkit-animation-name: floating;
-
     animation-duration: 25s;
     -webkit-animation-duration: 25s;
-
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
 }
-
 @keyframes floating4 {
     0% {
         transform: translateX(0%);
     }
     50% {
-    		transform:translateX(100%)
+            transform:translateX(100%)
     }
     100% {
         transform: translateX(0%);
     }
 }
-
 @-webkit-keyframes floating4 {
     0% {
         -webkit-transform: translateX(0%);
@@ -212,7 +209,6 @@ floating
         -webkit-transform: translateX(0%);
     }
 }
-
 ul li {
   padding: 10px
 }
