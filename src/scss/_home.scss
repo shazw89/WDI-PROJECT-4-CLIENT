@@ -1,84 +1,25 @@
+//This is the home/landing page
+
 .jumbotron {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    background-color:transparent !important;
-  }
-  p {
-    text-align: center;
-  }
+  background-image: url("http://cdn1.alphr.com/sites/alphr/files/styles/16x9_540/public/2015/06/rainbow.jpg?itok=nSnONP_3");
+}
 
-  .col-sm-8 {
-        margin-left: 215px;
-  }
+.display-3 {
+  text-align: center;
+}
 
-  .shape {
-    width: 400px;
-    height: 400px;
-    position: relative;
-    // bottom: -200px;
-    right: -30px;
-    // z-index: -1;
-    background-color: taupe;
-    animation: square-to-circle 4s .5s infinite cubic-bezier(1,.015,.295,1.225) alternate;
-  }
+.btn-lg, .btn-group-lg > .btn {
+  margin-left: 238px;
+}
 
-  .image {
-    width: 200px;
-    height: 100px;
-    position: relative;
-    right: -50px;
-    bottom: 250px;
-    z-index: 1;
-  }
-
-  h2{
-  font-family: 'noto', sans-serif;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 15px;
-  text-transform: uppercase;
-  }
-
-   @keyframes square-to-circle {
-    0%  {
-      border-radius:50% 50% 45% 30%;
-      background: #DD4B67;
-      transform:rotate(0deg);
-    }
-    15%  {
-      border-radius:45% 50% 50% 30%;
-      background:#E0C41E;
-      transform:rotate(45deg);
-    }
-
-
-    25%  {
-      border-radius:20% 45% 50% 45%;
-      background:#38E094;
-      transform:rotate(45deg);
-    }
-    50%  {
-      border-radius:45% 25% 40% 30%;
-      background:#8BD16B;
-      transform:rotate(90deg);
-    }
-    75%  {
-      border-radius:25% 25% 50% 20%;
-      background:#63BCC1;
-      transform:rotate(135deg);
-    }
-    100% {
-      border-radius:50%;
-      background:#402989;
-      transform:rotate(180deg);
-    }
-  }
+.lead {
+  text-align: center;
+}
 
 p {
   text-align: center;
 }
 
-.col-sm-8 {
+.form-container{
       margin-left: 215px;
 }
