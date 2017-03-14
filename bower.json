@@ -18,11 +18,10 @@
     "angular": "^1.5.8",
     "angular-jwt": "^0.1.8",
     "angular-ui-router": "^0.3.2",
-    "angular-resource": "^1.5.9",
-    "angular-audio": "^1.7.3",
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
-    "angular-bootstrap-colorpicker": "^3.0.25"
+    "angular-bootstrap-colorpicker": "^3.0.25",
+    "angular-resource": "^1.6.3"
   },
   "overrides": {
     "bootstrap": {
@@ -31,8 +30,5 @@
         "dist/js/bootstrap.js"
       ]
     }
-  },
-  "resolutions": {
-    "angular": "^1.5.8"
   }
 }
