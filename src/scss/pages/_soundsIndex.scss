@@ -23,7 +23,7 @@ button a {
 .wave-one {
   width: 1024px;
   height: 819px;
-  background: url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_one.png");
+  background: url("/images/waves_one.png");
   background-repeat: repeat-y;
   float: left;
   position: relative;
@@ -35,7 +35,7 @@ button a {
 .wave-two {
   width: 1024px;
   height: 819px;
- background: url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_two.png") no-repeat;
+  background: url("/images/waves_two.png") no-repeat;
   float: left;
   position: absolute;
   top: 0;
@@ -46,7 +46,7 @@ button a {
 .wave-three {
   width:1024px;
   height:819px;
- background:url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_three.png") no-repeat;
+  background:url("/images/waves_three.png") no-repeat;
   position:absolute;
   z-index:2;
   top: 0px;
@@ -61,7 +61,7 @@ button a {
   z-index: 2;
   float: left;
   overflow: hidden;
-  background: url("http://www.katharinefriedgen.com/wp-content/uploads/2015/06/waves_three.png") no-repeat;
+  background: url("/images/waves_three.png") no-repeat;
 }
 /*
 ==============================================
