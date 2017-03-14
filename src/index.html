@@ -1,32 +1,30 @@
 <!DOCTYPE html>
-<html ng-app="Synesthesia">
+<html ng-app="Synesthesia" strict-di>
 <head>
- <meta charset="utf-8">
- <title>Aura</title>
- <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
- <base href="/">
- <!-- inject:js -->
- <!-- endinject -->
- <!-- inject:css -->
- <!-- endinject -->
+  <meta charset="utf-8">
+  <title>Aura</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <base href="/">
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:css -->
+  <!-- endinject -->
 </head>
 <body ng-controller="MainCtrl as main">
- <header>
+  <header>
+    <nav class="navbar navbar-default">
+      <a class="navbar-brand" href="#"><img alt="Brand" src="images/Logo_blk.png"></a>
+      <ul class="menu">
+        <li ng-click="main.hideMenu()"><a ui-sref="home">Home</a></li>
+        <li ng-hide="main.user"><a ui-sref="login">Sign in</a></li>
+        <li ng-hide="main.user"><a ui-sref="register">Register</a></li>
+        <li ng-show="main.user"><a ui-sref="soundsIndex">View</a></li>
+        <li ng-show="main.user" ng-click="main.logout()"><a>Sign out</a></li>
+      </ul>
+    </nav>
 
-   <nav class="navbar navbar-default">
-         <a class="navbar-brand" href="#"><img alt="Brand" src="images/Logo_blk.png"></a>
-         <ul class="menu">
-           <li ng-click="main.hideMenu()"><a ui-sref="home">Home</a></li>
-           <li ng-hide="main.user"><a ui-sref="login">Sign in</a></li>
-           <li ng-hide="main.user"><a ui-sref="register">Register</a></li>
-           <li ng-show="main.user"><a ui-sref="soundsIndex">View</a></li>
-           <li ng-show="main.user" ng-click="main.logout()"><a>Sign out</a></li>
-         </ul>
-   </nav>
-
- </header>
- <main ui-view></main>
-
+  </header>
+  <main ui-view></main>
 
 
 
@@ -40,7 +38,8 @@
 
 
 
- <!-- <input ng-show="main.user" type="filepicker" data-fp-apikey="Au0FfUuSTvihNwvzZV0Q3z"
- onchange="alert(event.fpfile.url)"> -->
+
+  <!-- <input ng-show="main.user" type="filepicker" data-fp-apikey="Au0FfUuSTvihNwvzZV0Q3z"
+  onchange="alert(event.fpfile.url)"> -->
 </body>
 </html>
